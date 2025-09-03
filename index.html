@@ -10,11 +10,13 @@
     <!--menu nav-->
      
     <nav id="inicio">
-        <a href="#DATOS">presenacion</a> &emsp;
+        <a href="#DATOS">presenacion</a>&emsp;
         <a href=" #LINKS  ">links</a>&emsp;
         <a href=" #LOGOS ">logos</a>&emsp;
         <a href=" #LISTAS ">listas</a>&emsp;
         <a href=" #TABLA ">tablas</a>&emsp;
+        <a href="#USODEAUDIO">Audios</a>&emsp;
+        <a href="#FORMULARIOS">Formularios</a>&emsp;
         <a href="tpdpspbreyp.html" target="_blank">todos sobre yo</a>
     </nav>
 
@@ -58,20 +60,30 @@
 <hr style="height: 19px; border: dashed ; background-color: whitesmoke "> <!--modifica el interior y exterior  de la barra hr-->
 
     <h2 id="LISTAS">Uso listas</h2><!-- uso de las listas q son mayormene ol que son enumerados y ul q son por guiones o puntos luego de eso no hay mucha diferencia se le puede agregar un type-->
-
+<div style="font-family: Arial, Helvetica, sans-serif; " >   <p>listas hrdas</p>
     <ol type="I">
         <li>pollo</li>
         <li>papa</li>
 
 
     </ol>
-
+</div>
+<div style=" font-variant: small-caps;
+             color: azure;
+             background-color: aliceblue;
+             font-stretch: expanded;
+             font-style: oblique;
+             margin-left: 1000px;
+             text-align: end;     "> 
+    <p>ppapapdpp</p>
     <ul>
         <li>pollo</li>
         <li>papa</li>
 
 
     </ul>
+
+</div>
 <a href="#inicio" style="font-size: 25px;">Inicio</a>   
 <hr style="height: 19px; border: dashed ; background-color: whitesmoke "> <!--modifica el interior y exterior  de la barra hr-->
 
@@ -128,11 +140,89 @@
 </iframe>
 
 <hr style="height: 19px; border: dashed ; background-color: whitesmoke ">
-<H2>Uso de los audios</H2>
+<H2 id="USODEAUDIO">Uso de los audios</H2>
 
 <audio src="msc/Josimar Y Su Yambú - El Aventurero.mp3" controls loop autoplay> auido no soportado</audio>
 
+<hr style="height: 19px; border: dashed ; background-color: whitesmoke ">
+<H2 id="FORMULARIOS">FORMULARIOS</H2>
+
+
+
+<form action="tpdpspbreyp.html" method="post"    >
+    <p> <label for="name"> Nombre: <input type="text" name="Nombre" id="name" required></label></p>
+    <p> <label for="Apellido"> Apellido: <input type="text" name="" id="Apellido" required></label></p>
+    <p> <label for="Edad"> Edad: <input type="number" min="17" max="80" id="Edad" required></label></p>
+<label for="telf"> Telf
+    <input type="tel" name="telefeono" id="telefeono">
+</label>
+    <label for="email"> Email
+        <input type="email" name="email" id="email">
+    </label>
+
+    <p> <label for="obvservación"> obvservación:
+        <textarea name="obvservación" id="obvservación"
+        style="height: 180px; width:300px; font-size: 25px;">
+    </textarea>
+    </label>
     
+</p>
+
+
+<label for="estatura"> estatura
+
+    <select name="grupofromstatura" id="estatura">
+        <option value="seleciona">seleciona</option>
+        <option value="menor a 1.50"> menor a 1.50 </option>
+        <option value="de 1.50 a 1.59"> e 1.59 a 1.60</option>   
+        <option value="1.60 a 1.69"> 1.60 a 1.69</option>
+        <option value="mayor o igual que 1.70"> igual q 1.70 o mayor</option>
+    
+    </select>
+</label>
+<p> 
+    <label> cursos llevas</label>
+    <input type="checkbox" name="cursos" value="matematica" id="matematica">
+    <label for="matematica"> matematica </label>
+    <input type="checkbox" name="cursos" value="css" id="css">
+    <label for="css">css</label>
+    <input type="checkbox" name="cursos" value="html" id="html">
+    <label for="html"> html</label>
+
+</p>
+
+<p> 
+    <label> cliclo llevas</label></p>
+    <input style="scale: 1.4;" type="radio" name="ciclo" value="primero">
+    <label> primero </label><br>
+    <input style="scale: 1.4;" type="radio" name="ciclo" value="segundo" >
+    <label> segundo </label><br>
+    <input style="scale: 1.4;" type="radio" name="ciclo" value="tercer">
+    <label> tercer </label><br>
+    <input style="scale: 1.4;" type="radio" name="ciclo" value="cuarto">
+    <label> cuarto </label><br>
+
+<label for="fecha"> seleccione la fecha 
+    <input style="font-size: 25px;" type="date" name="fecha" id="fecha">
+</label>
+
+<br>
+
+
+
+<br>
+<button type="submit" style="font-size: large;">envivar</button>
+
+
+
+</form>
+
+
+<br><br>
+<a href="#inicio" style="font-size: 25px;">Inicio</a> 
+
+
+
 </body>
 </html>
 
