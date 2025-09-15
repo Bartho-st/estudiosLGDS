@@ -2,7 +2,6 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            flex-direction: column;/**/
         }
         header, nav, main, aside, footer {
             padding: 20px;
@@ -58,3 +57,79 @@
             margin: 1%;
             width: 200px;
         }
+        .aside_imagenes {
+            background-color: white;
+            background-attachment: scroll;
+
+        }
+        .hoober1{
+            color: white;
+        }
+        .hoober1:hover{
+            color: black;
+            font-size: large;
+        }
+        .hoober1:focus{
+            color: black;
+
+        }
+        
+        .priml{
+            color: #ffffff;
+        }
+        .priml::first-letter{
+            color: #b92b2b;
+            font-size: larger;
+        }
+        .hobber2:visited {
+            color: rgb(128, 0, 0);
+        }
+        .hobber2::selection{
+            color: #000000;
+            background-color: #b92b2b;
+        }
+        .clase_S{
+            font-size: larger;
+            background-color: aqua;
+            position:static;
+            margin-top: auto;
+            margin-left: 100px;
+            margin-right: 500px;
+        }
+        .clase_2{
+            font-size: large;
+            background-color: lightblue;
+            position: static;
+            top: 20px;
+            left: 200px;
+            right: 500px;
+        }
+        .clase_R{
+            font-size: 20px;
+            background-color: rgb(red, green, blue);
+            height: 250px;
+            width: 200px;
+        }
+        .clase_R:hover{
+            position: relative;
+            top: 100px;
+            left: 100px;       
+        }
+        .clase_R2{
+            font-size: 20px;
+            background-color: rgb(red, green, blue);
+            height: 250px;
+            width: 200px;
+            position: relative;
+        }
+        .clase_R3{
+            font-size: 20px;
+            background-color: rgb(red, green, blue);
+            height: 200px;
+            width: 150px;
+            position: absolute;
+            bottom: 300px;
+            left: 600px;
+        }
+
+
