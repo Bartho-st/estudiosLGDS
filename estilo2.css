@@ -27,6 +27,9 @@
             flex: 2;
             background-color: #b92b2b;
             padding: 10px;
+            border: 10px solid ;
+            margin: 15px;
+
         }
         aside {
             flex: 1; /**/
@@ -46,12 +49,16 @@
         article {
             background-color: #d1dfa1;
             margin-bottom: 10px;
+            flex: 1;
             padding: 10px;
             border: 1px solid #cccccc;
         }
         .contenedor {
-            max-width: 1200px;
+            max-width: 100%;
+            height: auto;
             margin: auto;
+            flex: 1;
+            padding: auto;
         }
         .margen_img{
             margin: 1%;
@@ -119,7 +126,7 @@
         }
         .clase_R{
             font-size: 20px;
-            background-color: rgb(red, green, blue);
+            background-color: white;
             height: 250px;
             width: 200px;
         }
@@ -130,18 +137,138 @@
         }
         .clase_R2{
             font-size: 20px;
-            background-color: rgb(red, green, blue);
+            background-color: white;
             height: 250px;
             width: 200px;
             position: relative;
         }
         .clase_R3{
             font-size: 20px;
-            background-color: rgb(red, green, blue);
+            background-color: white;
             height: 200px;
             width: 150px;
             position: absolute;
             bottom: 300px;
             left: 600px;
         }
+        .claseRelative{
+            font-size: 20px;
+            background-color: white;
+            height: 350px;
+            width: 300px;
+        }
+        .clase_Relative{
+            position: relative;
+            top: 300px; /* si colocas margin se acomoda, no superpone*/
+            left: 300px;    
+            z-index: -10; /* para colocar adelante o atras en profundidad respecto a otros elementos */
+        }
+        .claseabsolute {
+            font-size: 20px;
+            background-color: white;
+            height: 150px;
+            width: 100px;
+            position: absolute;
+            top: 85px;
+            left: 1000px;
+        }
+        .clase_2R{
+            font-size: 20px;
+            background-color: white;
+            height: 150px;
+            width: 100px;
+            position: relative;
+        }
+        .clase_2AR{
+            font-size: 20px;
+            background-color: white;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            bottom: 30px;
+            left: 600px;
+            z-index: -5px;
+        }
+        .clase_Fixed {
+            height: 2000px;
+            width: 2000px;
+            position: fixed;
+            left: 700px;
+            bottom: 0px;
+        }
+        .marcaagua {
+            opacity: 0.2;
+            pointer-events: none;
+            z-index: 999;
+        }   
+        .clase_sticky{
+            position: sticky;
+            font-size: 40px;
+            top: 0px;
+            left: 40px;
+            height: 300px;
+        }
+        .float-clas{
+            float: left;
+            background-color: white;
+            margin: 5px;
+        }
+        .enlinea{   
+            background-color: white;
+            display: inline;
+            font-size: large;
+            margin: 2px;
+            color: rgb(0, 0, 0);
+            width: 80px;
+            height: 40px;
+        }
+        .tipoinlineblock{
+            background-color: white;
+            font-size: large;
+            margin: 10px;
+            color: rgb(0, 0, 0);
+            display: inline-block;
+            width: 500px;
+        }
+        .tipono{
+            background-color: white;
+            font-size: 20px;
+            margin: 20px;
+            color: black;
+            display: none;
+        }
+        .tipohi{
+            background-color: rgb(0, 0, 0);
+            font-size: 20px;
+            margin: 20px;
+            color: rgb(0, 0, 0);
+            visibility: hidden;
+        }
+        .tipoflex{
+            display: flex;
+            background-color: wheat;
+            align-items:  end;
+            justify-content: space-around;
+        }
+        .contenedor-img {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+            gap: 15px; /* Espacio entre celdas */
+        }
+
+        .item img {
+            max-width: 100%; /* Para que no se desborde */
+        }
+        .item {
+            display: flex;
+            background-color: lightcoral;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #333;
+            font-size: 30px;
+            justify-content: center;  /* Centrar horizontalmente */
+            align-items: center;      /* Centrar verticalmente */
+        }
+
+
 
