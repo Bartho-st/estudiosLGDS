@@ -22,10 +22,36 @@
         </header>
 
         <nav> <!--enlaces internos-->
-            <a href="#">Inicio</a>
-            <a href="#">Sobre nosotros</a>
-            <a href="#">Servicios</a>
-            <a href="#">Contacto</a>
+            <a   href="#">Inicio</a>
+            <a   href="#">Sobre nosotros</a>
+            <a   href="#">Servicios</a>
+            <a   href="#">Contacto</a>
+
+            <ul class="claseNav">
+                <li> <a href="https://www.youtube.com"> youtube </a>
+                    <ul>
+                        <li>
+                            <a class="claseNav" href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ" target="_blank"> musica  </a>
+                        </li>
+                        <li>
+                            <a class="claseNav" href="https://www.youtube.com/channel/UCYfdidRxbB8Qhf0Nx7ioOYw" target="_blank" > noticia</a>
+                        </li>
+                    </ul>
+                
+                </li>
+                <li> <a href="https://pe.linkedin.com/"> cv </a>
+                    <ul>
+                        <li>
+                            <a class="claseNav" href="https://www.linkedin.com/pulse/topics/home/?trk=guest_homepage-basic_guest_nav_menu_articles" target="_blank"> no me acuerdo  </a>
+                        </li>
+                        <li>
+                            <a class="claseNav" href="https://www.linkedin.com/jobs/search?trk=content-hub-home-page_guest_nav_menu_jobs&position=1&pageNum=0" target="_blank" > Trabajo</a>
+                        </li>
+                    </ul>
+                
+                </li>
+            </ul>
+
         </nav>
 
         <main>
@@ -296,6 +322,39 @@ Contenido: El contenido de la página, ya sean textos, imágenes, videos o boton
     2do TEXTO en misma linea
     </p>
 </div>
+<video class="video" autoplay muted loop id="Video">
+    <source src="img/10 seconds timer - Temporizador 10 segundos- Cronómetro 10 segundos..mp4" type="video/mp4" >
+    no soporta 
+</video>
+
+
+
+
+<section>
+    <article> <h2> Javascript </h2>
+
+        <div style="font-size: x-large;">
+            contenedor resultado en Javascript
+            <div id="resultado" > 
+                <p>Operacion suma</p> 
+            </div>
+        </div>
+        <script>
+
+            window.alert("bienvenido");
+            var valor1=-1; var valor2=0;
+            var suma= valor1 + valor2 ; var resta = valor1 - valor2;
+            var producto= valor1*valor2;
+            document.write("<br>  <br> Final");
+            console.log("la suma es", valor1 ,"mas", valor2, "es", suma);
+            console.log("la resta es", valor1 ,"menos", valor2, "es", resta);
+
+
+            document.getElementById("resultado").innerHTML="el resultado es "+ suma +" y el de la resta es "+ resta +" y la multiplicacion es " +producto;
+        </script>
+
+    </article>
+</section>
 
 
 
