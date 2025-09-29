@@ -52,7 +52,7 @@ function agregadopermaentne(){
 function Crearlemnto(){
     var elemento = document.getElementById("comple1");
 
-    var nuevo1 = document.createElement("h3")
+    var nuevo1 = document.createElement("h3")//añade ala pagina un texto mas
     var tx=document.createTextNode("deporte fac");
     nuevo1.appendChild(tx);
     elemento.appendChild(nuevo1);
@@ -60,4 +60,66 @@ function Crearlemnto(){
     var nuevoinputText= document.createElement("input");
     nuevoinputText.type = "text" ;
     elemento.appendChild(nuevoinputText);
+
+    var nuevo1 = document.createElement("h3")//añade ala pagina un texto mas
+    var tx=document.createTextNode("Dni");
+    nuevo1.appendChild(tx);
+    elemento.appendChild(nuevo1);
+
+    var nuevoinputText= document.createElement("input");
+    nuevoinputText.type = "number" ;
+    elemento.appendChild(nuevoinputText);
+    
+}
+
+function Fquery(){
+
+    var objeto = document.querySelector(".class1dom");
+    objeto.innerHTML="texto cambiado por query selector";
+
+    var objetoid = document.querySelector("#Ejemdom");
+    objetoid.style.color = "red";
+
+    var objetotag = document.querySelector("h2");
+    objetotag.style.textAlign="right";
+}
+
+function Ffor(){
+
+  const textofor = document.getElementsByClassName("for1");
+  var textotal="";
+
+  for(let i=0 ; i< textofor.length ; i++)
+  {
+    textofor[i].style.border = "3px solid red";
+    textotal = textotal + textofor[i].innerText+'-';
+  }
+  var nuevofor = document.createElement("h1");
+  var text = document.createTextNode(textotal);
+  nuevofor.appendChild(text);
+  textofor[3].appendChild(nuevofor);        
+}
+
+function Ffor2(){
+    const textofor = document.querySelectorAll(".for1");
+    var textotal="";
+
+    textofor.forEach
+    ( iter =>
+    {
+        iter.style.border="3px double blue";
+        textotal = textotal + iter.innerHTML+'-';
+    }
+    );
+
+    var ntxt = document.createElement("h1");
+    var txt = document.createTextNode(textotal);
+    ntxt.appendChild(txt);
+    textofor[3].appendChild(ntxt);
+}
+
+function elima(){
+    const textofor = document.getElementsByClassName("for1")
+
+    textofor[1].remove();
 }
