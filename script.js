@@ -123,3 +123,94 @@ function elima(){
 
     textofor[1].remove();
 }
+
+l//et year = prompt('En que año fue creado el 2015');
+
+//if( year < 2010 ){
+ // alert=('estas equivocado');
+//}
+//else
+//{
+//    if (year > 2010)
+ //   {
+//        alert("no es");
+ //   }
+//    else{alert("acertaste")}
+//}sss
+
+function elima(){
+    const txtclass = document.getElementsByClassName("for1");
+    let rspt = prompt('deseas elimina S o N');
+    if ( rspt == "s" || rspt == "S")
+    { let rspt2 = prompt("ingrese la fla a elmar",'');
+        if ( rspt2>= 0 && rspt2< txtclass.length )
+            {
+                txtclass[rspt2].remove();
+                alert("listo");
+        }   
+        else{
+
+            alert("incorrecto");
+
+        }
+
+    }
+    else
+    { if(rspt == "N" || rspt=="n" )
+        {
+            alert("Nose elima nada");
+        }
+        else
+        {
+            alert("incorrecto")
+        }
+    }
+}
+
+function Crearlemnto(){
+    const txtclass = document.getElementsByClassName("comple1");
+    let rspt = prompt('Deseas agregar un parrafo S o N');
+    if ( rspt == 'S' || rspt == 's')
+    {
+        let rspt2 = prompt(" donde lo deseas agegar",'');
+            txtclass[rspt2].createElement("h2");
+            alert("listo");
+    
+        txtclass[rspt2].createElement("h2");
+        alert("listo");
+    }
+    else
+    {
+        if( rspt == "N" || rspt == "n" )
+        {
+            alert("no se elimna nd");
+        }
+        else
+        {
+            alert("incorrecto")
+        }
+    }
+}
+
+function Copynombre(){
+
+
+    const vtxt1 = document.getElementById("name");
+    const vtxt2 = document.querySelectorAll("input.Dpersonals");
+    const vtxt3 = document.getElementById("passwordo");
+ 
+    vtxt1.style.color="blue";
+
+    var valor1 = vtxt1.value;
+    var valor2 ="";
+    vtxt3.value.valor1;
+
+    vtxt2.forEach(input => {
+        valor2 = valor2 + `${input.name}: ${input.value} : ${input.id} \n`;
+        input.style.border="2px solid black";
+
+    });
+    vtxt2[1].style.backgroundColor="blue";
+    document.getElementById('obvservaciónes').value = valor2
+    console.log(valor1)
+}

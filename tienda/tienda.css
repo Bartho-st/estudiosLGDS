@@ -35,7 +35,7 @@ th, td {
   border: 1px solid #000000;
   padding: 5px;
 }
-.thumb {
+.one {
   width: 50px;
   height: 50px;
   background: #444;
@@ -54,7 +54,6 @@ label {
   margin-right: 10px; 
 }
 
-/* Botones */
 button {
   margin: 5px 0;
   padding: 5px 10px;

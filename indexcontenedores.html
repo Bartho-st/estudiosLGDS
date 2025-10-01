@@ -401,6 +401,95 @@ Contenido: El contenido de la página, ya sean textos, imágenes, videos o boton
         </button>
 
     </article>  
+    <article>
+        <h2>Uso de js en formularios</h2>
+
+        <form action="tpdpspbreyp.html" method="post"    >
+            <p> <label for="name"> Nombre: <input type="text"  class="Dpersonals" name="Nombre" id="name" autofocus required></label></p>
+            <p> <label for="Apellido"> Apellido: <input type="text"  class="Dpersonals" name="Apellido" id="Apellido" required></label></p>
+            <p> <label for="Edad"> Edad: <input type="number"  class="Dpersonals" min="17" max="80" id="Edad" ></label></p>
+            <label for="telf"> Telf
+            <input type="tel" name="telefeono" id="telefeono">
+            </label>
+            <label for="correo"> Email
+                <input placeholder="@certus.edu.pe" type="email" name="correo" id="correo" 
+                        pattern="[a-zA-Z]+@certus\.edu\.pe" >
+            </label>
+        
+            <p> <label for="obvservación"> obvservación:
+                <textarea name="obvservación" id="obvservaciónes"
+                style="height: 180px; width:300px; font-size: 25px;">
+            </textarea>
+            </label>
+        <br>
+            
+        </p>
+        
+        
+        <label for="estatura"> estatura
+        
+            <select name="grupofromstatura" id="estatura">
+                <option value="seleciona">seleciona</option>
+                <option value="menor a 1.50"> menor a 1.50 </option>
+                <option value="de 1.50 a 1.59"> e 1.59 a 1.60</option>   
+                <option value="1.60 a 1.69"> 1.60 a 1.69</option>
+                <option value="mayor o igual que 1.70"> igual q 1.70 o mayor</option>
+            </select>
+        </label>
+        <p> 
+            <label> cursos llevas</label>
+            <input type="checkbox" name="cursos" value="matematica" id="matematica">
+            <label for="matematica"> matematica </label>
+            <input type="checkbox" name="cursos" value="css" id="css">
+            <label for="css">css</label>
+            <input type="checkbox" name="cursos" value="html" id="html">
+            <label for="html"> html</label>
+        
+        </p>
+        
+        <p> 
+            <label> cliclo llevas</label></p>
+            <input style="scale: 1.4;" type="radio" name="ciclo" value="primero" id="primero">
+            <label> primero </label><br>
+            <input style="scale: 1.4;" type="radio" name="ciclo" value="segundo" id="segundo" >
+            <label> segundo </label><br>
+            <input style="scale: 1.4;" type="radio" name="ciclo" value="tercer" id="tercer" >
+            <label> tercer </label><br>
+            <input style="scale: 1.4;" type="radio" name="ciclo" value="cuarto" id="cuarto" >
+            <label> cuarto </label><br>
+        
+            <label for="fecha"> seleccione la fecha 
+            <input style="font-size: 25px;" type="date" name="fecha" id="fecha"
+                min="2025-02-12" max="2025-12-12">
+            </label>
+        
+        <br>
+        <br>
+        <label for="resetear">Limpiar:</label>
+        <input type="reset" id="resetear" name="resetear" ><br><br>
+        
+        <label for="password">Contraseña:</label>
+        <input type="password" id="passwordo" name="password" class="Dpersonals"  required minlength="8" maxlength="14"><br><br>
+        
+        <br>
+        
+        
+        
+        <label for="text"> usuario
+            <input type="text" name="usuario" id="usuario" minlength="5" maxlength="20" pattern="[A-Za-z0-9]+" >
+        </label>
+        
+        
+
+
+            <button type="button"  onclick="Copynombre()">Haz clic</button>    
+        
+        
+        
+        
+            <button type="submit" style="font-size: large;">envivar</button> <br>
+        </form>
+    </article>
 
 </section>
 
