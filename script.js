@@ -1,4 +1,4 @@
-//
+//  
 
 let varGlobal="vrabld goblal";
 window.vtexto1="";
@@ -124,7 +124,7 @@ function elima(){
     textofor[1].remove();
 }
 
-l//et year = prompt('En que año fue creado el 2015');
+//et year = prompt('En que año fue creado el 2015');
 
 //if( year < 2010 ){
  // alert=('estas equivocado');
@@ -214,3 +214,47 @@ function Copynombre(){
     document.getElementById('obvservaciónes').value = valor2
     console.log(valor1)
 }
+
+    function validarC(){
+
+        const varlida = document.getElementsByName("ciclo");
+        
+        for(let i = 0; i < varlida.length; i++) {
+            if( varlida[i].checked==true) {
+                document.getElementById('observaciones').value = varlida[i].value;
+                return;
+
+            }      
+        }
+
+    }
+//////////////////////////otra cosechgga//////////////////////////
+document.addEventListener("DOMContentLoaded", () => {
+  const radios = document.querySelectorAll('input[name="ciclo"]');
+
+  radios.forEach(function (radio) {
+    radio.addEventListener('change', function (event) {
+      const valorSeleccionado = event.target.value;
+      alert("Ciclo: " + valorSeleccionado);
+      document.getElementById("observaciones").value = valorSeleccionado;
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  const checkboxes = document.querySelectorAll('input[name="cursos"]');
+  const textarea = document.getElementById("observaciones");
+  checkboxes.forEach(function(checkbox) {
+    checkbox.addEventListener("change", function() {
+      let seleccionados = "";
+      checkboxes.forEach(function(check) {
+        if (check.checked) {
+          seleccionados += check.value + " ";
+        }
+      });
+      textarea.value = "Cursos elegidos: " + seleccionados;
+    });
+  });
+
+});
