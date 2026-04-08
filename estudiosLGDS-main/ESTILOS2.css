@@ -1,0 +1,318 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        header, nav, main, aside, footer {
+            padding: 20px;
+            margin: 10px;
+        }
+        header {
+            background-color: hsl(165, 24%, 81%);
+            color: white;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+        }
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        main {
+            display: flex; /*flexible para evitar los superposaientos*/
+        }
+        section {
+            flex: 2;
+            background-color: #b92b2b;
+            padding: 10px;
+            border: 10px solid ;
+            margin: 15px;
+
+        }
+        aside {
+            flex: 1; /**/
+            background-color: #99a7d6;
+            padding: 10px;
+            max-width: 100px;
+            height: 400px;
+            flex-direction: column;/*flex direction en columna para que
+            vaya pa abajo */
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+        }
+        article {
+            background-color: #d1dfa1;
+            margin-bottom: 10px;
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #cccccc;
+        }
+        .contenedor {
+            max-width: 100%;
+            height: auto;
+            margin: auto;
+            flex: 1;
+            padding: auto;
+        }
+        .margen_img{
+            margin: 1%;
+            width: 200px;
+        }
+
+        .clase_Relative_index {
+            font-size: 20px;
+            background-color: rgb(187, 218, 77);
+            height: 250px;
+            width: 200px;
+        }
+        .clase_Relative_index:hover {
+            position: relative;
+            top: 100px;
+            left: 100px;
+            z-index: -10;
+        }
+        .aside_imagenes {
+            background-color: white;
+            background-attachment: scroll;
+
+        }
+        .hoober1{
+            color: white;
+        }
+        .hoober1:hover{
+            color: black;
+            font-size: large;
+        }
+        .hoober1:focus{
+            color: black;
+
+        }
+        
+        .priml{
+            color: #ffffff;
+        }
+        .priml::first-letter{
+            color: #b92b2b;
+            font-size: larger;
+        }
+        .hobber2:visited {
+            color: rgb(128, 0, 0);
+        }
+        .hobber2::selection{
+            color: #000000;
+            background-color: #b92b2b;
+        }
+        .clase_S{
+            font-size: larger;
+            background-color: aqua;
+            position:static;
+            margin-top: auto;
+            margin-left: 100px;
+            margin-right: 500px;
+        }
+        .clase_2{
+            font-size: large;
+            background-color: lightblue;
+            position: static;
+            top: 20px;
+            left: 200px;
+            right: 500px;
+        }
+        .clase_R{
+            font-size: 20px;
+            background-color: white;
+            height: 250px;
+            width: 200px;
+        }
+        .clase_R:hover{
+            position: relative;
+            top: 100px;
+            left: 100px;       
+        }
+        .clase_R2{
+            font-size: 20px;
+            background-color: white;
+            height: 250px;
+            width: 200px;
+            position: relative;
+        }
+        .clase_R3{
+            font-size: 20px;
+            background-color: white;
+            height: 200px;
+            width: 150px;
+            position: absolute;
+            bottom: 300px;
+            left: 600px;
+        }
+        .claseRelative{
+            font-size: 20px;
+            background-color: white;
+            height: 350px;
+            width: 300px;
+        }
+        .clase_Relative{
+            position: relative;
+            top: 300px; /* si colocas margin se acomoda, no superpone*/
+            left: 300px;    
+            z-index: -10; /* para colocar adelante o atras en profundidad respecto a otros elementos */
+        }
+        .claseabsolute {
+            font-size: 20px;
+            background-color: white;
+            height: 150px;
+            width: 100px;
+            position: absolute;
+            top: 85px;
+            left: 1000px;
+        }
+        .clase_2R{
+            font-size: 20px;
+            background-color: white;
+            height: 150px;
+            width: 100px;
+            position: relative;
+        }
+        .clase_2AR{
+            font-size: 20px;
+            background-color: white;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            bottom: 30px;
+            left: 600px;
+            z-index: -5px;
+        }
+        .clase_Fixed {
+            height: 2000px;
+            width: 2000px;
+            position: fixed;
+            left: 700px;
+            bottom: 0px;
+        }
+        .marcaagua {
+            opacity: 0.2;
+            pointer-events: none;
+            z-index: 999;
+        }   
+        .clase_sticky{
+            position: sticky;
+            font-size: 40px;
+            top: 0px;
+            left: 40px;
+            height: 300px;
+        }
+        .float-clas{
+            float: left;
+            background-color: white;
+            margin: 5px;
+        }
+        .enlinea{   
+            background-color: white;
+            display: inline;
+            font-size: large;
+            margin: 2px;
+            color: rgb(0, 0, 0);
+            width: 80px;
+            height: 40px;
+        }
+        .tipoinlineblock{
+            background-color: white;
+            font-size: large;
+            margin: 10px;
+            color: rgb(0, 0, 0);
+            display: inline-block;
+            width: 500px;
+        }
+        .tipono{
+            background-color: white;
+            font-size: 20px;
+            margin: 20px;
+            color: black;
+            display: none;
+        }
+        .tipohi{
+            background-color: rgb(0, 0, 0);
+            font-size: 20px;
+            margin: 20px;
+            color: rgb(0, 0, 0);
+            visibility: hidden;
+        }
+        .tipoflex{
+            display: flex;
+            background-color: wheat;
+            align-items:  end;
+            justify-content: space-around;
+        }
+        .contenedor-img {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+            gap: 15px; /* Espacio entre celdas */
+        }
+
+        .item img {
+            max-width: 100%; /* Para que no se desborde */
+        }
+        .item {
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #333;
+            font-size: 30px;
+            justify-content: center;  /* Centrar horizontalmente */
+            align-items: center;      /* Centrar verticalmente */
+        }
+        .video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+         }
+         .claseNav{
+            background-color: rgb(151, 36, 36);
+            font-size: 30px;
+            padding-inline: 0px;
+            color: black;
+            display: inline;
+            list-style-type: none;
+         }
+         .claseNav a:hover{
+            background-color: beige;
+         }
+         .claseNav ul{
+            background-color: black;
+            list-style-type: none;
+            display: block;
+            margin: 0px;
+            padding: 0px;
+         }
+         .claseNav li a{
+            text-decoration: none;
+            padding: 6px 11px;
+            display: block;
+         }
+         .claseNav >li{
+            float: left;
+         }
+         .claseNav li ul{
+            display: none;
+            position: absolute;
+            min-width: 140px;
+         }
+         .claseNav li:hover>ul{
+            display: block;
+         }
+
+

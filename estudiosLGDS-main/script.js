@@ -1,0 +1,260 @@
+//  
+
+let varGlobal="vrabld goblal";
+window.vtexto1="";
+
+function FcambioColor(){
+
+    vtexto1 =document.getElementById("Ejemdom");
+    document.body.style.backgroundColor="black";
+
+    vtexto1.textContent="texto cambio por el fcambiocolor()";
+    vtexto1.style.color="red"; 
+    vtexto1.insertAdjacentHTML("afterbegin", "texto adcional "); 
+
+}
+
+function Prueba(){
+    document.close();   
+}
+
+function FcambioClas(){
+    let vtxt2 =document.getElementsByClassName("class1dom");
+    vtxt2[1].innerHTML="elemento[1] de la clase dom";
+    vtxt2[1].innerHTML="\n su tipo of es "+typeof(vtxt2);
+    varGlobal="varible h";
+
+}
+
+function Fcambiotag(){
+    let vtxt3=document.getElementsByTagName('h2');
+    vtxt3[6].innerHTML="elemento h2 vabiado";
+    varGlobal="varible h";
+    vtxt3[10].innerHTML=`tipo variable de vargoblal es: ${typeof(varGlobal)} `
+}
+
+//function Fcrear(){
+        //document.write("<ul>"+
+      //   "<li>pollo</li>"+
+    //     "<li>papa</li>"+ 
+  //       "</ul>")
+//}
+
+function Fcrear(){
+        let vlista=document.getElementById("Ejemdom");
+        
+        vlista.innerHTML="<ul>' '<li>pollo</li>' '<li>papa</li>''</ul> ";
+}
+function agregadopermaentne(){
+    let vtxt4="<img src='img/disney.jpg' alt='no cargo ' width='10000em'>"
+    vtexto1.innerHTML= vtexto1.innerHTML+ vtxt4
+}
+function Crearlemnto(){
+    var elemento = document.getElementById("comple1");
+
+    var nuevo1 = document.createElement("h3")//añade ala pagina un texto mas
+    var tx=document.createTextNode("deporte fac");
+    nuevo1.appendChild(tx);
+    elemento.appendChild(nuevo1);
+
+    var nuevoinputText= document.createElement("input");
+    nuevoinputText.type = "text" ;
+    elemento.appendChild(nuevoinputText);
+
+    var nuevo1 = document.createElement("h3")//añade ala pagina un texto mas
+    var tx=document.createTextNode("Dni");
+    nuevo1.appendChild(tx);
+    elemento.appendChild(nuevo1);
+
+    var nuevoinputText= document.createElement("input");
+    nuevoinputText.type = "number" ;
+    elemento.appendChild(nuevoinputText);
+    
+}
+
+function Fquery(){
+
+    var objeto = document.querySelector(".class1dom");
+    objeto.innerHTML="texto cambiado por query selector";
+
+    var objetoid = document.querySelector("#Ejemdom");
+    objetoid.style.color = "red";
+
+    var objetotag = document.querySelector("h2");
+    objetotag.style.textAlign="right";
+}
+
+function Ffor(){
+
+  const textofor = document.getElementsByClassName("for1");
+  var textotal="";
+
+  for(let i=0 ; i< textofor.length ; i++)
+  {
+    textofor[i].style.border = "3px solid red";
+    textotal = textotal + textofor[i].innerText+'-';
+  }
+  var nuevofor = document.createElement("h1");
+  var text = document.createTextNode(textotal);
+  nuevofor.appendChild(text);
+  textofor[3].appendChild(nuevofor);        
+}
+
+function Ffor2(){
+    const textofor = document.querySelectorAll(".for1");
+    var textotal="";
+
+    textofor.forEach
+    ( iter =>
+    {
+        iter.style.border="3px double blue";
+        textotal = textotal + iter.innerHTML+'-';
+    }
+    );
+
+    var ntxt = document.createElement("h1");
+    var txt = document.createTextNode(textotal);
+    ntxt.appendChild(txt);
+    textofor[3].appendChild(ntxt);
+}
+
+function elima(){
+    const textofor = document.getElementsByClassName("for1")
+
+    textofor[1].remove();
+}
+
+//et year = prompt('En que año fue creado el 2015');
+
+//if( year < 2010 ){
+ // alert=('estas equivocado');
+//}
+//else
+//{
+//    if (year > 2010)
+ //   {
+//        alert("no es");
+ //   }
+//    else{alert("acertaste")}
+//}sss
+
+function elima(){
+    const txtclass = document.getElementsByClassName("for1");
+    let rspt = prompt('deseas elimina S o N');
+    if ( rspt == "s" || rspt == "S")
+    { let rspt2 = prompt("ingrese la fla a elmar",'');
+        if ( rspt2>= 0 && rspt2< txtclass.length )
+            {
+                txtclass[rspt2].remove();
+                alert("listo");
+        }   
+        else{
+
+            alert("incorrecto");
+
+        }
+
+    }
+    else
+    { if(rspt == "N" || rspt=="n" )
+        {
+            alert("Nose elima nada");
+        }
+        else
+        {
+            alert("incorrecto")
+        }
+    }
+}
+
+function Crearlemnto(){
+    const txtclass = document.getElementsByClassName("comple1");
+    let rspt = prompt('Deseas agregar un parrafo S o N');
+    if ( rspt == 'S' || rspt == 's')
+    {
+        let rspt2 = prompt(" donde lo deseas agegar",'');
+            txtclass[rspt2].createElement("h2");
+            alert("listo");
+    
+        txtclass[rspt2].createElement("h2");
+        alert("listo");
+    }
+    else
+    {
+        if( rspt == "N" || rspt == "n" )
+        {
+            alert("no se elimna nd");
+        }
+        else
+        {
+            alert("incorrecto")
+        }
+    }
+}
+
+function Copynombre(){
+
+
+    const vtxt1 = document.getElementById("name");
+    const vtxt2 = document.querySelectorAll("input.Dpersonals");
+    const vtxt3 = document.getElementById("passwordo");
+ 
+    vtxt1.style.color="blue";
+
+    var valor1 = vtxt1.value;
+    var valor2 ="";
+    vtxt3.value.valor1;
+
+    vtxt2.forEach(input => {
+        valor2 = valor2 + `${input.name}: ${input.value} : ${input.id} \n`;
+        input.style.border="2px solid black";
+
+    });
+    vtxt2[1].style.backgroundColor="blue";
+    document.getElementById('obvservaciónes').value = valor2
+    console.log(valor1)
+}
+
+    function validarC(){
+
+        const varlida = document.getElementsByName("ciclo");
+        
+        for(let i = 0; i < varlida.length; i++) {
+            if( varlida[i].checked==true) {
+                document.getElementById('observaciones').value = varlida[i].value;
+                return;
+
+            }      
+        }
+
+    }
+//////////////////////////otra cosechgga//////////////////////////
+document.addEventListener("DOMContentLoaded", () => {
+  const radios = document.querySelectorAll('input[name="ciclo"]');
+
+  radios.forEach(function (radio) {
+    radio.addEventListener('change', function (event) {
+      const valorSeleccionado = event.target.value;
+      alert("Ciclo: " + valorSeleccionado);
+      document.getElementById("observaciones").value = valorSeleccionado;
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  const checkboxes = document.querySelectorAll('input[name="cursos"]');
+  const textarea = document.getElementById("observaciones");
+  checkboxes.forEach(function(checkbox) {
+    checkbox.addEventListener("change", function() {
+      let seleccionados = "";
+      checkboxes.forEach(function(check) {
+        if (check.checked) {
+          seleccionados += check.value + " ";
+        }
+      });
+      textarea.value = "Cursos elegidos: " + seleccionados;
+    });
+  });
+
+});

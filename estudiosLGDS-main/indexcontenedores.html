@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contenedores</title>
+    <link rel="stylesheet" type="text/css" href="estilo2.css">
+    <script type="text/Javascript" src="script.js" >  </script>
+</head>
+<body>
+    <h1 style="background-image:url('img/logo.webp');  
+               background-size: 50px;
+               background-repeat: repeat-x;
+               background-attachment: fixed; " >purbae</h1>
+    <div class="contenedor">
+        <header  style="background-image:url('imgdATOS/pita.jpeg'); 
+                        background-repeat: repeat-x; 
+                        background-size: 50px;
+                        background-attachment: fixed;
+                        background-position: auto;"  >
+            <h1>DENZZO</h1>
+            <p>Bienvenido a DENZZZO</p>
+        </header>
+
+        <nav> <!--enlaces internos-->
+            <a   href="#">Inicio</a>
+            <a   href="#">Sobre nosotros</a>
+            <a   href="#">Servicios</a>
+            <a   href="#">Contacto</a>
+
+            <ul class="claseNav">
+                <li> <a href="https://www.youtube.com"> youtube </a>
+                    <ul>
+                        <li>
+                            <a class="claseNav" href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ" target="_blank"> musica  </a>
+                        </li>
+                        <li>
+                            <a class="claseNav" href="https://www.youtube.com/channel/UCYfdidRxbB8Qhf0Nx7ioOYw" target="_blank" > noticia</a>
+                        </li>
+                    </ul>
+                
+                </li>
+                <li> <a href="https://pe.linkedin.com/"> cv </a>
+                    <ul>
+                        <li>
+                            <a class="claseNav" href="https://www.linkedin.com/pulse/topics/home/?trk=guest_homepage-basic_guest_nav_menu_articles" target="_blank"> no me acuerdo  </a>
+                        </li>
+                        <li>
+                            <a class="claseNav" href="https://www.linkedin.com/jobs/search?trk=content-hub-home-page_guest_nav_menu_jobs&position=1&pageNum=0" target="_blank" > Trabajo</a>
+                        </li>
+                    </ul>
+                
+                </li>
+            </ul>
+
+        </nav>
+
+        <main>
+            
+            <section>       
+                <article>
+                    <h2>Hoodies </h2>
+                    <p>Una hoodie Y2K es un tipo de chándal que representa el estilo de moda de los años 2000, 
+                    caracterizado por su colorido, audaz y futurista. Este estilo se basa en la transición 
+                    del siglo XX al XXI, con un enfoque en la tecnología y la cultura pop de la época. Las hoodies Y2K 
+                    suelen tener colores vibrantes, gráficos icónicos y un corte oversized, lo que las hace no solo cómodas,
+                     sino también un símbolo de la nostalgia y el espíritu de la era Y2K</p>
+                    <img  class="margen_img" src="imgcompany/1.jpg" alt="img"> 
+                    <img  class="margen_img" src="imgcompany/2.jpg" alt="img">
+                    <p>Catalogo.</p>
+                </article>
+                <article>
+                    <h2>Polos</h2>
+                    <img class="margen_img" src="imgcompany/polo1.webp" alt="nocarga" >
+                    <img class="margen_img" src="imgcompany/polo2.jpg" alt="nocarga" >
+                    <p>Inspirado en la estética de finales de los 90 y principios de los 2000, 
+                        este estilo se caracteriza por su enfoque futurista, colores vibrantes y 
+                        prendas ajustadas con un toque de nostalgia.</p>
+                    <p>Catalago.</p>
+                </article>
+            </section>
+
+<div class="sidebar"><!--es obligatorio usar el sidebar para que se vaya en columna, para que pueda haber mas de un aside-->
+            <aside>
+                <h3 class="priml">Quienes somos</h3>
+                <p>bla bla bla bla bla.</p>
+                <p> <a class="hoober1" href="https://ezzetacompany.com/" target="_blank" > inspiraciones</a> </p>
+                <p> <a class="hobber2" href="https://www.youtube.com/" target="_blank"> youtube </a></p>
+            </aside>
+            <aside class="aside_imagenes">
+            <h1>titulo  </h1>
+            <div class="disney-logo ">
+            <img 
+            src="imgdATOS/get-a-load-of-this-guy.gif" width="50" alt="Disney" >
+            </div>
+            </aside>
+            <!--lo tube q meter en un sidebar para que lo agrupe en el mismo grupo
+            y no se vaya pa otro lado estan en un mismo contenedor pero ala 
+            vez separados-->
+
+        </div>
+        </main>
+
+<section>
+    <article> <h2>Posisicionamiento</h2>
+        <br>
+        <h2>Static</h2>
+    <div style="display: inline-block;" >
+        <p class="clase_S" > Texto static</p>
+    </div>
+    <div style="display: inline-block;" >
+        <p>el segundo </p>
+    </div>
+    <h2> Posisicionamiento2 </h2>
+    <div style="display: inline-block;" >
+        <p class="clase_2"> txto con static</p>
+    </div>
+    <div style="display: inline-block;" >
+        <p style="background-color: orange;" >segundox</p>
+
+    </div>
+
+    <h2>Posicionamiento</h2>
+    
+    <div style="display: inline-block;" >
+        <p class="clase_R" > Texto ocn relative</p>
+        <img 
+        class="clase_R" 
+        style="border: 9px dotted; color: black; " 
+        src="img/html-5.png" alt="No disponivle"
+        width="400" height="341" >
+
+    </div>
+    <div style="display: inline-block;" >
+        <p>2ext</p>
+    </div>
+
+    <h2>Posicionamiento2relavite</h2>
+
+    
+    
+<div style="display: inline-block;" 
+    class="clase_R2" >
+        <p> la img es absoluamente al div relative</p>
+        <img 
+        class="clase_R3" 
+        style="border: 9px dotted; color: black; " 
+        src="img/html-5.png" alt="No disponivle"
+        width="400" height="341">
+    </div>
+<div style="display: inline-block;" >
+        <h2> 2do texto inline bloc relative </h2>
+</div> <br><br>
+    
+<div style="display: inline-block">
+        <p class="claseRelative"> teXTO CON POSICIONAMIENTO RELATIVO en un bloque inline ------------------</p>
+        <img class="claseRelative" 
+             style="border:9px dotted ; color: rgb(253, 55, 29)" 
+             src="img/html-5.png" 
+             alt="IMAGEN NO DISPONIBLE" 
+             width="200" 
+             height="241" />
+</div>
+      
+<div style="display: inline-block">
+            <p style="color: rgb(7, 143, 59); font-size: 40px;"> 2do teXTO en misma linea </p>
+</div>
+
+      <h2> PosicionamientoAbsoluto pag inicial </h2>
+      <div style="display: inline-block">
+        <img  
+        class="claseabsolute" 
+        src="img/html-5.png" 
+        alt="F" width="200" 
+        height="340"  >
+        
+</div>
+      
+
+
+<div style="display: inline-block">
+        <p style="color: rgb(7, 143, 59); font-size: 40px;"> 2do teXTO en absoluamente misma linea </p>
+</div>
+
+      <H2>POSICIONAMIENTO abso resp rel</H2>
+<div style="display: inline-block;" class="clase_2R" >
+        <p>la img es abso respc al div rela</p>
+        <img  
+        class="clase_2AR" 
+        style="border:9px dotted ; color: rgb(red, green, blue);" 
+        src="img/html-5.png" 
+        alt="F" width="400" height="341" >
+</div>
+<div style="display: inline-block;" >
+        <h2>2do texto avso rla</h2>
+</div>
+
+    <h2> Posicionamiento 222</h2>
+<div >
+    <img  class="clase_Fixed ; marcaagua" 
+    style="border:9px solid ; color: rgb(255, 0, 0); " 
+    src="img/disney.jpg"  
+    width="300" height="400" alt="F">
+</div>
+<h2>Posicionamiento sticky</h2>
+<div style="height: 600px;" >
+    <img class="clase_sticky" style="border: 9px double; color: white; " src="img/html-5.png" alt="f" width="200" height="300"> 
+
+
+
+
+</div>
+<p>Había una vez, en un pequeño pueblo rodeado de montañas, un joven llamado Lucas. Era conocido por su curiosidad insaciable y por su amor por los misterios. Todos en el pueblo le decían que no se acercara al Bosque de los Susurros, un lugar que se decía estaba lleno de voces que solo se escuchaban cuando caía la noche.
+
+Pero Lucas no podía resistirse. Un día, al caer el sol, decidió adentrarse en el bosque. No le tenía miedo a las historias que contaban los ancianos del pueblo, pensaba que tal vez todo era solo superstición.
+
+Con cada paso que daba, los árboles se volvían más altos y la luz del día se desvanecía rápidamente. Pronto, una brisa fría acarició su rostro y, por primera vez, escuchó un suave susurro entre las hojas.
+
+"¿Quién está ahí?" preguntó Lucas, un poco inquieto, pero decidido.
+
+No obtuvo respuesta. Solo el sonido del viento y más susurros que parecían rodearlo. Al principio, pensó que eran solo animales, pero pronto comenzó a entender que no era eso lo que escuchaba. Las voces parecían hablarle directamente, como si le dijeran cosas que él ya sabía, pero de una manera diferente.
+
+"Lucas... el bosque te conoce... sabes lo que buscas."
+
+Confundido, Lucas siguió caminando, guiado por la sensación de que algo lo esperaba más adelante. Al llegar a un claro, vio algo extraordinario: un árbol enorme, con hojas plateadas que brillaban a la luz de la luna. En su base, había una puerta pequeña, casi imperceptible, que parecía hecha de raíces entrelazadas.
+
+Un susurro más fuerte que los demás lo llamó: "Abre la puerta, Lucas."
+
+Sin pensarlo, Lucas tocó la puerta y, al instante, esta se abrió, revelando un mundo que nunca había visto. Era un lugar lleno de criaturas fantásticas, ríos de agua luminosa y cielos estrellados, todo en una armonía perfecta.
+
+"Este es el corazón del bosque," dijo una voz suave. "Has llegado porque eres el elegido para proteger este lugar. Aquí, los secretos de la naturaleza se guardan, y solo alguien con corazón puro puede descubrirlos."
+
+Lucas miró a su alrededor, maravillado, y entendió que su vida había cambiado para siempre. No solo había descubierto un lugar mágico, sino que había encontrado su verdadero propósito: proteger el equilibrio de la naturaleza.
+
+Y así, cada noche, después de sus días en el pueblo, Lucas regresaba al Bosque de los Susurros, donde las voces le enseñaban los secretos del mundo natural, y él se convertía en el guardián de lo que la mayoría nunca llegaría a conocer.
+
+Y cuentan que, si alguien se adentra en el bosque con un corazón puro, aún puede escuchar los susurros... guiándolos hacia la verdad.
+
+Fin.    </p>
+    
+<div>
+    <img class="float-clas" style="border: 9px double; color: white;" src="img/html-5.png" alt="F" width="300" height="300" >
+    <p style="font-size: large;" > 
+        Visión general creada por IA
+HTML, o Lenguaje de Marcado de Hipertexto, es el lenguaje estándar para estructurar y presentar el contenido de las páginas web. Utiliza un sistema de etiquetas para organizar y definir elementos como texto, imágenes, enlaces y tablas, indicándole al navegador web cómo mostrar estos componentes al usuario. Básicamente, HTML es el esqueleto de todo sitio web, proporcionando la estructura necesaria para que el contenido sea coherente, accesible y funcional. 
+¿Cómo funciona?
+Etiquetas: HTML usa "etiquetas" (o "tags") para marcar y definir los diferentes elementos de una página. Por ejemplo, la etiqueta <h1> se usa para un título principal, <h2> para un subtítulo, y <p> para un párrafo. 
+Estructura: Estas etiquetas, junto con el contenido entre ellas, crean una estructura jerárquica que el navegador interpreta. El navegador lee el código y "dibuja" la página en la pantalla. 
+Contenido: El contenido de la página, ya sean textos, imágenes, videos o botones, se inserta dentro de estas etiquetas para indicar al navegador qué tipo de información es. 
+    </p>
+</div>
+</article>
+
+<article>
+    <h2>elemtento none</h2>
+    <div class="tipono"> elemtnto estilo none</div>
+
+    
+    <h1>display visualizaciones</h1>
+
+    <div class="enlinea"> elemte 1 del bloque </div><br>
+    <div class="enlinea"> elemte 2 del bloque </div><br>
+    <div class="tipoinlineblock"> elemte 3 del bloque </div>
+
+    <h2 class="tipohi"> tipo hidden </h2>
+
+    <h2>display flex</h2>
+
+    <div class="tipoflex" >
+        <div style="background-color: rgb(255, 0, 0);" > elemtno 1</div>
+        <div style="background-color: rgb(255, 0, 0);" > elentmto 2 </div>
+        <img src="img/html-5.png" alt="f" height="200" width="200">
+        <div style="background-color: rgb(245, 0, 0);" >elentento 3</div>
+        
+    </div>
+
+    <h2>Uso de display grid</h2>
+    <h2>significado de img</h2>
+
+    <div class="contenedor-img" >
+        <div class="item" > <img src="img/disney.jpg" alt="f" height="200" width="200"></div>
+        <div class="item" > <img src="img/html-5.png" alt="f" height="200" width="200"> </div>
+        <div class="item" >img1</div>
+        <div class="item" >img2</div>
+        <div class="item" >2img</div>
+        <div class="item" >1mg</div>
+    </div>
+
+</article>
+
+</section>
+
+
+
+
+
+
+        <footer>
+            <p>Derechos reservados &copy; 2025 - DENZZO</p>
+            <p>copyright; lima Perú 2025</p>
+        </footer>
+
+
+    </div>
+
+
+    <h1>POSITION RELATIVE CON INDEX</h1>
+
+<div style="display: inline-block">
+    <p class="clase_Relative_index">
+    TEXTO CON POSICIONAMIENTO RELATIVE CON INDEX  
+    en un bloque inline ----------------------------
+    </p>
+    <img class="clase_Relative_index"
+        src="img/disney.jpg"
+        alt="IMAGEN NO DISPONIBLE"
+        height="341"
+        style="border: 9px dotted; color: rgb(from color r g b); ">
+</div>
+
+<div style="display: inline-block">
+    <p style="color: rgb(7, 143, 59); font-size: 40px;">
+    2do TEXTO en misma linea
+    </p>
+</div>
+<video class="video" autoplay muted loop id="Video">
+    <source src="img/10 seconds timer - Temporizador 10 segundos- Cronómetro 10 segundos..mp4" type="video/mp4" >
+    no soporta 
+</video>
+
+
+
+
+<section>
+    <article> <h2> Javascript </h2>
+
+        <div style="font-size: x-large;">
+            contenedor resultado en Javascript
+            <div id="resultado" > 
+                <p>Operacion suma</p> 
+            </div>
+        </div>
+        <script>
+
+            window.alert("bienvenido");
+            var valor1=-1; var valor2=0;
+            var suma= valor1 + valor2 ; var resta = valor1 - valor2;
+            var producto= valor1*valor2;
+            document.write("<br>  <br> Final");
+            console.log("la suma es", valor1 ,"mas", valor2, "es", suma);
+            console.log("la resta es", valor1 ,"menos", valor2, "es", resta);
+
+
+            document.getElementById("resultado").innerHTML="el resultado es "+ suma +" y el de la resta es "+ resta +" y la multiplicacion es " +producto;
+        </script>
+
+        <h1>Cambiar color de fondo-- DOM  --</h1>
+        <P id="Ejemdom" style="font-size: x-large;" > prmer texto </P>
+
+        <button onclick="FcambioColor()"> cambiar color </button>
+
+        <h1>Puebra y error</h1>
+
+        <button onclick="Prueba()"> click </button>
+
+        <h1 style="font-size: x-large;" > manipulACION DEl dom </h1>
+        <p id="Ejemdom" >  </p>
+        <p class="class1dom" > 1 </p>
+        <p class="class1dom" > 2 </p>
+        <h2 class="class1dom" > 3 </h2>
+
+
+        <button style="font-size: x-large;" onclick="FcambioColor()"> cambiar color </button><br> 
+        <button style="font-size: x-large;" onclick="FcambioClas()"> cambiar color </button><br> 
+        <button style="font-size: x-large;" onclick="Fcambiotag()"> cambiar color </button><br> 
+        <button style="font-size: x-large;" onclick="Fcrear()"> viñetasa </button> <br> 
+        <button style="font-size: x-large;" onclick="agregadopermaentne()"> agregado </button>
+        
+        <h2>elemtneto en lidea</h2>
+        <button style="font-size: x-large;" onclick="Crearlemnto()"> Crear </button>
+        <div id="comple1" > Datos del estudiante</div>
+
+        <button onclick="Fquery()"> clase y h2 </button> 
+
+
+        <h2>Uso de For clasco y condicionales </h2>
+
+        <p class="for1"> texto 1  de clase de fo1 </p>
+        <p class="for1"> texto 2  de clase de fo1 </p>
+        <p class="for1"> texto 3  de clase de fo1 </p>
+        <p class="for1"> texto 4  de clase de fo1 </p>
+
+        <button style="font-size: x-large;" onclick="Ffor()" >
+            reporte
+        </button>
+        <button style="font-size: x-large;" onclick="Ffor2()" >
+            elimintion
+        </button>
+        <button style="font-size: x-large;" onclick="elima()" >
+            elimintion
+        </button>
+
+    </article>  
+    <article>
+        <h2>Uso de js en formularios</h2>
+
+        <form action="tpdpspbreyp.html" method="post"    >
+            <p> <label for="name"> Nombre: <input type="text"  class="Dpersonals" name="Nombre" id="name" autofocus required></label></p>
+            <p> <label for="Apellido"> Apellido: <input type="text"  class="Dpersonals" name="Apellido" id="Apellido" required></label></p>
+            <p> <label for="Edad"> Edad: <input type="number"  class="Dpersonals" min="17" max="80" id="Edad" ></label></p>
+            <label for="telf"> Telf
+            <input type="tel" name="telefeono" id="telefeono">
+            </label>
+            <label for="correo"> Email
+                <input placeholder="@certus.edu.pe" type="email" name="correo" id="correo" 
+                        pattern="[a-zA-Z]+@certus\.edu\.pe" >
+            </label>
+        
+            <p> <label for="obvservación"> obvservación:
+                <textarea name="obvservación" id="observaciones"
+                style="height: 180px; width:300px; font-size: 25px;">
+            </textarea>
+            </label>
+        <br>
+            
+        </p>
+        
+        
+        <label for="estatura"> estatura
+        
+            <select name="grupofromstatura" id="estatura">
+                <option value="seleciona">seleciona</option>
+                <option value="menor a 1.50"> menor a 1.50 </option>
+                <option value="de 1.50 a 1.59"> e 1.59 a 1.60</option>   
+                <option value="1.60 a 1.69"> 1.60 a 1.69</option>
+                <option value="mayor o igual que 1.70"> igual q 1.70 o mayor</option>
+            </select>
+        </label>
+        <p> 
+            <label> cursos llevas</label>
+            <input type="checkbox" name="cursos" value="matematica" id="matematica">
+            <label for="matematica"> matematica </label>
+            <input type="checkbox" name="cursos" value="css" id="css">
+            <label for="css">css</label>
+            <input type="checkbox" name="cursos" value="html" id="html">
+            <label for="html"> html</label>
+        
+        </p>
+        
+        <p>          <label> cliclo llevas</label></p>
+            <input style="scale: 1.4;" type="radio" name="ciclo" value="primero" id="primero">
+            <label> primero </label><br>
+            <input style="scale: 1.4;" type="radio" name="ciclo" value="segundo" id="segundo" >
+            <label> segundo </label><br>
+            <input style="scale: 1.4;" type="radio" name="ciclo" value="tercer" id="tercer" >
+            <label> tercer </label><br>
+            <input style="scale: 1.4;" type="radio" name="ciclo" value="cuarto" id="cuarto" >
+            <label> cuarto </label><br>
+        
+            <label for="fecha"> seleccione la fecha 
+            <input style="font-size: 25px;" type="date" name="fecha" id="fecha"
+                min="2025-02-12" max="2025-12-12">
+            </label>
+        
+        <br>
+        <br>
+        <label for="resetear">Limpiar:</label>
+        <input type="reset" id="resetear" name="resetear" ><br><br>
+        
+        <label for="password">Contraseña:</label>
+        <input type="password" id="passwordo" name="password" class="Dpersonals"  required minlength="8" maxlength="14"><br><br>
+        
+        <br>
+        
+        
+        
+        <label for="text"> usuario
+            <input type="text" name="usuario" id="usuario" minlength="5" maxlength="20" pattern="[A-Za-z0-9]+" >
+        </label>
+        
+        
+
+
+            <button type="button"  onclick="Copynombre()">Haz clic</button>    
+        
+        
+        
+        
+            <button type="submit" style="font-size: large;">envivar</button> <br>
+        </form>
+
+                <button style="font-size: x-large;" onclick="validarC()" >
+            Valida
+        </button>
+
+    </article>
+
+</section>
+
+
+
+</body>
+</html>

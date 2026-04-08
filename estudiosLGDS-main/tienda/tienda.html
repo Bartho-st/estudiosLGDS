@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tienda.css">
+  <link rel="icon" href="tineda/icon.webp">
+  <title>casacastore</title>
+    <script type="text/Javascript" src="tienda.js" >  </script>
+</head>
+<body>
+
+<div class="marca-agua">casacastore</div>
+
+<header>
+  <h1 style="color: whitesmoke;">Tienda de Casacas</h1>
+  <img src="tineda/icon.webp" alt="Logo" class="logo">
+</header>
+
+<!-- Catálogo -->
+<section>
+  <h2>Catálogo</h2>
+  <table id="catalogo">
+    <thead>
+      <tr>
+        <th>Foto</th>
+        <th>Nombre</th>
+        <th>Talla</th>
+        <th>Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-price="120">
+        <td><img src="tineda/impermeable.jpg" alt="Casaca A" class="one"></td>
+        <td>Impermeable gris</td>
+        <td>S</td>
+        <td>120</td>
+      </tr>
+      <tr data-price="150">
+        <td><img src="tineda/concapuchaverde.jpg" alt="Casaca B" class="one"></td>
+        <td>Casaca verde con capucha</td>
+        <td>M</td>
+        <td>150</td>
+      </tr>
+      <tr data-price="200">
+        <td><img src="tineda/concapucha.webp" alt="Casaca C" class="one"></td>
+        <td>Casaca negra con capucha</td>
+        <td>L</td>
+        <td>200</td>
+      </tr>
+      <tr data-price="90">
+        <td><img src="tineda/celestesin.webp" alt="Casaca D" class="one"></td>
+        <td>Casaca celeste sin capucha</td>
+        <td>XL</td>
+        <td>90</td>
+      </tr>
+      <tr data-price="175">
+        <td><img src="tineda/sincapucha.webp" alt="Casaca E" class="one"></td>
+        <td>Casaca E</td>
+        <td>M</td>
+        <td>175</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- Inputs -->
+<section>
+  <h2>Datos</h2>
+  <input type="text" id="nombre" class="info-text" placeholder="Nombre">
+  <input type="text" id="direccion" class="info-text" placeholder="Dirección">
+  <input type="text" id="referencia" class="info-text" placeholder="Referencia">
+</section>
+
+<section>
+  <h2>Cantidad</h2>
+  <input type="number" id="cantidad" min="1" value="1">
+</section>
+
+<section>
+  <h2>Observaciones</h2>
+  <textarea id="observaciones" rows="4" cols="30"></textarea>
+</section>
+
+<section>
+  <h2>Preferencias</h2>
+  <label><input type="checkbox" id="chk1" class="opcion" name="preferencias"> Opción 1</label>
+  <label><input type="checkbox" id="chk2" class="opcion" name="preferencias"> Opción 2</label>
+  <label><input type="checkbox" id="chk3" class="opcion" name="preferencias"> Opción 3</label>
+</section>
+
+<section>
+  <h2>Pago</h2>
+  <label><input type="radio" id="rb1" class="metodo" name="pago"> Efectivo</label>
+  <label><input type="radio" id="rb2" class="metodo" name="pago"> Tarjeta</label>
+  <label><input type="radio" id="rb3" class="metodo" name="pago"> Transferencia</label>
+</section>
+
+
+<section>
+  <button onclick="butoncal()">9) Calcular total</button>
+  <div id="res-total"></div>
+
+  <button onclick="mostrarIDs()">10) Mostrar IDs concatenados</button>
+  <div id="res-ids"></div>
+
+  <button onclick="contarInputs()">11) Contar inputs</button>
+  <div id="res-contar"></div>
+
+  <button onclick="calcularDescRec()">12) Descuento / Recargo</button>
+</section>
+
+</body>
+</html>
